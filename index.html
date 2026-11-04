@@ -1,45 +1,15 @@
 <!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Публичная техническая документация АРМ «Дешифратор»">
-<title>АРМ «Дешифратор» — техническая документация</title>
-<style>
-:root{color-scheme:light;--ink:#172b4d;--muted:#52627a;--line:#d9e2ef;--surface:#fff;--bg:#f3f6fb;--accent:#2457a7}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:960px;margin:0 auto;padding:56px 24px}
-header{padding:36px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
-.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
-h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:.5rem 0 1rem}
-.lead{max-width:72ch;color:var(--muted);font-size:1.08rem}
-.notice{margin-top:22px;padding:14px 18px;background:#edf3ff;border-left:4px solid var(--accent);border-radius:8px;color:#243b5b}
-h2{margin:34px 0 14px;font-size:1.35rem}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-article{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-article h3{margin:0 0 8px;font-size:1.08rem}
-article p{color:var(--muted);margin:0 0 14px}
-a{color:var(--accent);font-weight:650;text-decoration:none}a:hover{text-decoration:underline}
-footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-</style>
-</head>
-<body>
-<main>
-<header>
-<p class="eyebrow">Technical documentation · Portfolio case study</p>
-<h1>АРМ «Дешифратор»</h1>
-<p class="lead">Публичная техническая документация настольного приложения: архитектура компонентов, файловый обмен и инженерные решения.</p>
-<div class="notice"><strong>Границы публикации.</strong> Материалы основаны на доступных проектных описаниях и фрагментах кода. Это не полная спецификация и не результат полного аудита исходного кода. Исторический технический контекст относится к проекту Scientific Instruments, Inc. (2014–2016).</div>
-</header>
-<section aria-labelledby="docs">
-<h2 id="docs">Документация</h2>
-<div class="cards">
-<article><h3>Архитектура и компоненты</h3><p>Назначение приложения, основные компоненты и подтверждённый технологический контекст.</p><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/architecture.md">Открыть документ на GitHub</a></article>
-<article><h3>Файловый обмен и MRZ</h3><p>Описание обмена данными через файлы и обработки MRZ; неподтверждённые детали отмечаются отдельно.</p><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/data-exchange-and-mrz.md">Открыть документ на GitHub</a></article>
-<article><h3>Технические риски и решения</h3><p>Зафиксированные инженерные риски, ограничения доступных материалов и вопросы для уточнения.</p><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/risks-and-decisions.md">Открыть документ на GitHub</a></article>
-</div>
-</section>
-<footer>Публичная демонстрационная документация. Сведения о текущем состоянии и полноте миграции компонентов требуют отдельной проверки по исходному коду.</footer>
-</main>
-</body>
-</html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Публичная техническая документация АРМ «Дешифратор»: архитектура, файловый обмен, MRZ и инженерные решения.">
+<title>АРМ «Дешифратор» — техническая документация</title><link rel="stylesheet" href="./styles.css"></head>
+<body><a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="wrap top"><a class="brand" href="./">АРМ «Дешифратор» · Техническая документация</a>
+<p class="eyebrow">Technical documentation · Portfolio case study</p><nav aria-label="Основная навигация"><a href="./" aria-current="page">Обзор</a><a href="./architecture.html">Архитектура</a><a href="./data-exchange-and-mrz.html">Файловый обмен и MRZ</a><a href="./risks-and-decisions.html">Риски и решения</a></nav></header>
+<main class="wrap" id="main"><section class="hero"><h1>АРМ «Дешифратор»</h1>
+<p class="lead">Публичная техническая документация настольного приложения: архитектура компонентов, файловый обмен с мобильным модулем, обработка MRZ и инженерные решения.</p>
+<div class="note"><strong>Границы публикации.</strong> Исторический технический контекст относится к Scientific Instruments, Inc. (2014–2016). Материалы основаны на доступных проектных описаниях и фрагментах кода; это не полная спецификация и не результат полного аудита исходного кода.</div></section>
+<section class="cards" aria-label="Документы">
+<article class="card"><h2>Архитектура и компоненты</h2><p>Назначение приложения, пользовательский интерфейс, предметные модели, SOAP-интеграция и внешние зависимости.</p><a class="card-link" href="./architecture.html">Открыть на сайте →</a></article>
+<article class="card"><h2>Файловый обмен и MRZ</h2><p>Обмен с мобильным модулем через файлы, состояния обработки, шифрование и формирование MRZ.</p><a class="card-link" href="./data-exchange-and-mrz.html">Открыть на сайте →</a></article>
+<article class="card"><h2>Технические риски и решения</h2><p>Предварительные наблюдения по коду, совместимость интеграций и направления модернизации.</p><a class="card-link" href="./risks-and-decisions.html">Открыть на сайте →</a></article>
+</section></main><footer class="wrap footer">Публичная документация портфолио. Исторический контекст: Scientific Instruments, Inc. (2014–2016). Материалы основаны на доступных проектных описаниях и фрагментах кода; это не полная спецификация и не полный аудит исходного кода.</footer></body></html>
