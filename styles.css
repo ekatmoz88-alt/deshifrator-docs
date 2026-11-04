@@ -18,3 +18,4 @@ ul{padding-left:1.35rem}li{margin:4px 0}code{background:#f2f5f9;border:1px solid
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:18px}.card{padding:22px}.card h2{margin:0 0 8px;font-size:1.13rem}.card p{color:var(--muted)}.card-link{display:inline-block;margin-top:8px;font-weight:700}
 .footer{border-top:1px solid var(--line);padding:18px 0 30px;color:var(--muted);font-size:.9rem}
 @media(max-width:600px){.hero,.content{padding:21px 18px}nav a{font-size:.84rem;padding:6px 9px}}
+.language-switch{display:flex;align-items:center;gap:6px;margin:12px 0 4px;font-size:.88rem;font-weight:750}.language-switch a,.language-switch span{display:inline-block;min-width:42px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;text-align:center;text-decoration:none}.language-switch [aria-current=true]{background:var(--soft);border-color:#b9cbed;color:var(--ink)}
