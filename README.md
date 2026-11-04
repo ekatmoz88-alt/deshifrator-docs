@@ -1,23 +1,23 @@
-# АРМ «Дешифратор» — публичная документация
+# Deshifrator — Desktop Application Documentation
 
-Публичное техническое описание настольного приложения «Дешифратор». Материалы основаны на доступных проектных описаниях и фрагментах кода; это не полная спецификация и не результат полного аудита исходного кода.
+Public technical documentation for the Deshifrator desktop application. The materials are based on available project descriptions and selected source-code excerpts; they are not a complete specification or a full source-code audit.
 
-## Назначение
+## Purpose
 
-Приложение поддерживает поиск и обработку сведений о персонах и досье, взаимодействие с внешней системой через SOAP, адресный поиск на основе ФИАС/Elasticsearch и обмен с мобильным модулем через файлы на съёмном носителе.
+The application supports searching and processing person and case records, integration with an external system through SOAP, address lookup using FIAS/Elasticsearch, and file-based data exchange with a mobile module.
 
-## Документы
+## Documentation
 
-- [Архитектура и компоненты](docs/architecture.md)
-- [Файловый обмен и MRZ](docs/data-exchange-and-mrz.md)
-- [Технические риски и решения](docs/risks-and-decisions.md)
+- [Architecture and components](docs/architecture.md)
+- [File exchange and MRZ](docs/data-exchange-and-mrz.md)
+- [Technical risks and engineering decisions](docs/risks-and-decisions.md)
 
-## Технологический контекст
+## Technology context
 
-В материалах упоминаются .NET Framework 4.5, WPF/WinForms, SQLite, Tesseract OCR, Elasticsearch и SOAP. Также описан план/частичный перенос отдельных компонентов на .NET 8; полноту миграции следует проверять по исходному коду.
+The materials mention .NET Framework 4.5, WPF/WinForms, SQLite, Tesseract OCR, Elasticsearch, and SOAP. A planned or partial migration of selected components to .NET 8 is also described; the migration status must be verified against the source code.
 
-## Безопасность
+## Security and publication boundaries
 
-Публичная версия не содержит реальных учётных данных, ключевого материала, персональных данных, производственных адресов сервисов, строк подключения или реальных файлов обмена. Адреса окружений задаются отдельно через защищённую конфигурацию.
+The public version contains no real credentials, cryptographic key material, personal data, production service addresses, connection strings, or actual exchange files. Environment-specific endpoints are configured separately through protected configuration.
 
-Проект выполнялся в рамках работы в Scientific Instruments, Inc. в 2014–2016 годах. Описание отражает исторический технический контекст и не утверждает, что перечисленные версии компонентов используются сейчас.
+This project was documented as part of the author's work at Scientific Instruments, Inc. (2014–2016). The content describes the historical technical context and does not imply that the listed component versions are currently in use.
