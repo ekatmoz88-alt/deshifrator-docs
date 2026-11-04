@@ -12,6 +12,10 @@ The application supports searching and processing person and case records, integ
 - [File exchange and MRZ](docs/data-exchange-and-mrz.md)
 - [Technical risks and engineering decisions](docs/risks-and-decisions.md)
 
+## Architecture boundary
+
+ПОСС, ПОМС, and ПОШ ВБД belong to a separate architecture. They are not part of Deshifrator and must not be added to its component diagrams, relationships, interfaces, or functional descriptions without explicit confirmation.
+
 ## Technology context
 
 The materials mention .NET Framework 4.5, WPF/WinForms, SQLite, Tesseract OCR, Elasticsearch, and SOAP. A planned or partial migration of selected components to .NET 8 is also described; the migration status must be verified against the source code.
