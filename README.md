@@ -4,13 +4,13 @@ Public technical documentation for the Deshifrator desktop application. The mate
 
 ## Purpose
 
-The application supports searching and processing person and case records, integration with an external system through SOAP, address lookup using FIAS/Elasticsearch, and file-based data exchange with a mobile module.
+The package contains a desktop application and separate stationary and mobile modules for person and case workflows. The available configuration files show a UMMS SOAP endpoint in the mobile module and local FIAS/Elasticsearch settings in the mobile and stationary modules. The exact ownership of every integration must be verified against source code and service contracts.
 
 ## Documentation
 
 - [Architecture and components](docs/architecture.md)
 - [File exchange and MRZ](docs/data-exchange-and-mrz.md)
-- [Technical risks and engineering decisions](docs/risks-and-decisions.md)
+- [Technical risks and engineering decisions](docs/risks-and-decisions.md)\n- [Dependencies, configuration, and runtime boundaries](docs/dependencies-and-runtime.md)
 
 ## Architecture boundary
 
@@ -18,7 +18,7 @@ The application supports searching and processing person and case records, integ
 
 ## Technology context
 
-The materials mention .NET Framework 4.5, WPF/WinForms, SQLite, Tesseract OCR, Elasticsearch, and SOAP. A planned or partial migration of selected components to .NET 8 is also described; the migration status must be verified against the source code.
+The supplied packages target .NET Framework 4.5 and include WPF components, SQLite, Tesseract OCR, Elasticsearch 1.2.1, and separate mobile/stationary modules. The mobile configuration contains the UMMS SOAP endpoint. A possible .NET 8 migration is mentioned in project materials, but its scope and completion status are unverified.
 
 ## Security and publication boundaries
 
