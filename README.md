@@ -33,3 +33,8 @@ The supplied packages target .NET Framework 4.5 and include WPF components, SQLi
 The public version must not contain credentials, cryptographic key material, personal data, production service addresses, connection strings, or actual exchange files. Environment-specific endpoints are excluded from public examples.
 
 This project was documented as part of the author's work at Scientific Instruments, Inc. (2014–2016). The content describes the historical technical context and does not imply that the listed component versions are currently in use.
+
+
+## Tags
+
+`deshifrator` · `csharp` · `wpf` · `sqlite` · `soap` · `source-review` · `legacy-systems`
