@@ -1,4 +1,4 @@
-# Deshifrator — Desktop Application Documentation
+# ППО — Desktop Application Documentation
 
 **Published documentation:** https://ekatmoz88-alt.github.io/deshifrator-docs/
 
@@ -20,9 +20,9 @@ Public technical documentation for the PПО. Материалы основан�
 
 ## Architecture boundary
 
-This repository documents the real **АРМ «Дешифратор»** application suite (ModuleMobile, ModuleStationary, and Printer / PassportPaint). Historical materials also use the earlier name **АРМ «Дискриптор»** for this same project; it is not a separate product. The companion repository `descriptor-arm-spec` contains complementary project-level workstation specifications, while this repository documents selected software components and source-code excerpts.
+This repository documents the real **ППО** application suite (ModuleMobile, ModuleStationary, and Printer / PassportPaint). Historical materials also use the earlier name **АРМ «Дискриптор»** for this same project; it is not a separate product. The companion repository `descriptor-arm-spec` contains complementary project-level workstation specifications, while this repository documents selected software components and source-code excerpts.
 
-ПОСС, ПОМС, ПОШ ВБД, and the Oracle GLOBAL11 demo data model are not treated as components of the Deshifrator application in this repository. No relationship between the Oracle model and this WPF application suite is established by the available evidence.
+ПОСС, ПОМС, ПОШ ВБД, and the Oracle GLOBAL11 demo data model are not treated as components of the ППО application in this repository. No relationship between the Oracle model and this WPF application suite is established by the available evidence.
 
 ## Technology context
 
